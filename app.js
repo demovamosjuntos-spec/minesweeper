@@ -1,3 +1,9 @@
+const translations = {
+  "messages": {
+    "gameOver": "BOOM! Game Over!",
+    "win": "YOU WIN!"
+  }
+};
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.querySelector('.grid')
   const flagsLeft = document.querySelector('#flags-left')
@@ -160,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //game over
   function gameOver(square) {
-    result.innerHTML = 'BOOM! Game Over!'
+    result.innerHTML = translations.messages.gameOver
     isGameOver = true
 
     //show ALL the bombs
@@ -183,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
         matches ++
       }
       if (matches === bombAmount) {
-        result.innerHTML = 'YOU WIN!'
+        result.innerHTML = translations.messages.win
         isGameOver = true
       }
     }
