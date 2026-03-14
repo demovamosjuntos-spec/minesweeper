@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file original="strings.json" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <note>Source: strings.json. Target locale: Spanish (es). Microsoft Language Portal consulted for approved Spanish gaming and UI terminology.</note>
+    </header>
+    <body>
+
+      <trans-unit id="gameOver" resname="gameOver">
+        <source>BOOM! Game Over!</source>
+        <target>¡BOOM! ¡Fin del juego!</target>
+        <note>
+CONTEXT: Full-screen overlay shown the instant the player clicks a mine and loses.
+Tone: Dramatic, punchy, exclamatory — mirrors the shock of the explosion.
+UI constraints: Short banner; prioritise impact over verbosity.
+
+MICROSOFT TERMINOLOGY (via Microsoft Language Portal):
+- "Game Over" → approved Spanish equivalent is "Fin del juego", used across Xbox, Windows,
+  and MSN Games including Microsoft's own Spanish Minesweeper localisation.
+- "BOOM" is an onomatopoeia. Microsoft retains "BOOM" for Latin American Spanish (es-419)
+  and adapts to "¡BUM!" for Spain Spanish (es-ES). "BOOM" is used here as the universally
+  understood form across all Spanish locales.
+
+TRANSLATION RATIONALE: "¡BOOM! ¡Fin del juego!"
+Aligns with Microsoft's approved term; retains "BOOM" for cross-regional intelligibility.
+If targeting es-ES exclusively, consider "¡BUM! ¡Fin del juego!".
+        </note>
+      </trans-unit>
+
+      <trans-unit id="win" resname="win">
+        <source>YOU WIN!</source>
+        <target>¡HAS GANADO!</target>
+        <note>
+CONTEXT: Full-screen overlay shown when the player successfully clears the board.
+Tone: Celebratory, triumphant. All-caps in the source to convey excitement.
+UI constraints: Short banner; mirror the energy and register of the English source.
+
+MICROSOFT TERMINOLOGY (via Microsoft Language Portal):
+- "You Win" / "You Won" → approved Spanish equivalent is "¡Has ganado!" (present perfect,
+  second-person singular informal), used in MSN Games, Xbox achievements, and the official
+  Solitaire/Minesweeper localisations.
+- All-caps ("¡HAS GANADO!") matches the source register and is standard in Microsoft's
+  Spanish game UI strings.
+- Regional note: "¡GANASTE!" (preterite) is more natural in Latin American Spanish (es-419)
+  and equally valid if targeting es-MX or es-419.
+
+TRANSLATION RATIONALE: "¡HAS GANADO!"
+Matches Microsoft's approved gaming terminology and preserves the all-caps source register.
+If targeting es-419, consider "¡GANASTE!" instead.
+        </note>
+      </trans-unit>
+
+    </body>
+  </file>
+</xliff>
